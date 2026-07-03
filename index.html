@@ -58,6 +58,7 @@ section{padding:80px 24px;}
 .tag-auto{background:rgba(16,185,129,.2);color:#6ee7b7;}
 .tag-inmo{background:rgba(245,158,11,.2);color:#fcd34d;}
 .tag-concejal{background:rgba(239,68,68,.2);color:#fca5a5;}
+.tag-seguro{background:rgba(6,78,59,.4);color:#6ee7b7;}
 .modulo-titulo{font-size:15px;font-weight:800;color:white;margin-bottom:6px;}
 .modulo-desc{font-size:12px;color:var(--gris);line-height:1.5;}
 .demo-banner{background:linear-gradient(135deg,rgba(6,182,212,.15),rgba(124,58,237,.15));border:1px solid rgba(6,182,212,.3);border-radius:16px;padding:28px 32px;margin-bottom:40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
@@ -67,6 +68,7 @@ section{padding:80px 24px;}
 .btn-demo:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(6,182,212,.3);}
 .btn-demo-verde{background:linear-gradient(135deg,var(--verde),#0891b2);}
 .btn-demo-rojo{background:linear-gradient(135deg,#ef4444,#7c3aed);}
+.btn-demo-seguro{background:linear-gradient(135deg,#064e3b,#065f46);}
 .auto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
 .auto-card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:22px;transition:border-color .2s;}
 .auto-card:hover{border-color:#10b98144;}
@@ -105,6 +107,7 @@ footer a{color:#a78bfa;text-decoration:none;}
     <a href="#docentes">Docentes</a>
     <a href="#inmobiliaria">Inmobiliaria</a>
     <a href="#concejal">Concejales</a>
+    <a href="#seguros">Seguros</a>
     <a href="#automatizacion">Automatización</a>
     <a href="#contacto">Contacto</a>
   </div>
@@ -115,7 +118,7 @@ footer a{color:#a78bfa;text-decoration:none;}
   <div>
     <div class="hero-badge">⚡ IA + Automatización para profesionales</div>
     <h1>Soluciones con <span>Inteligencia Artificial</span> para educación, salud y negocios</h1>
-    <p>Módulos clínicos para psicopedagogos, herramientas para docentes, gestión inmobiliaria y legislativa con IA. Sin complicaciones técnicas.</p>
+    <p>Módulos clínicos para psicopedagogos, herramientas para docentes, gestión inmobiliaria, legislativa y de seguros con IA. Sin complicaciones técnicas.</p>
     <div class="hero-btns">
       <a href="#psicopedagogia" class="btn-primary">Ver módulos</a>
       <a href="https://wa.me/5493329599250?text=Hola%20Gerardo,%20quiero%20una%20demo" target="_blank" class="btn-secondary">Pedir demo gratis</a>
@@ -125,7 +128,7 @@ footer a{color:#a78bfa;text-decoration:none;}
 
 <div class="stats">
   <div class="stat"><div class="stat-num">19+</div><div class="stat-label">Módulos desarrollados</div></div>
-  <div class="stat"><div class="stat-num">4</div><div class="stat-label">Áreas de solución</div></div>
+  <div class="stat"><div class="stat-num">5</div><div class="stat-label">Áreas de solución</div></div>
   <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Sin papel ni servidores</div></div>
   <div class="stat"><div class="stat-num">0$</div><div class="stat-label">Infraestructura para el cliente</div></div>
 </div>
@@ -173,6 +176,13 @@ footer a{color:#a78bfa;text-decoration:none;}
       <div class="modulo-card"><div class="modulo-icon">🎨</div><span class="modulo-tag tag-doc">Docentes</span><div class="modulo-titulo">Actividades Inclusivas NEE</div><div class="modulo-desc">Banco de actividades imprimibles con pictogramas para alumnos sin lectoescritura. Sin internet, sin API.</div></div>
       <div class="modulo-card"><div class="modulo-icon">📖</div><span class="modulo-tag tag-doc">Docentes</span><div class="modulo-titulo">Recursos Didácticos Adaptados</div><div class="modulo-desc">Cuentos, fichas matemáticas y juegos fonológicos personalizados según el centro de interés y las necesidades del alumno.</div></div>
     </div>
+    <div class="demo-banner" style="margin-top:24px;">
+      <div class="demo-banner-texto">
+        <h3>📝 EvaluaIA — Demo en vivo</h3>
+        <p>Generá evaluaciones de Lengua, Matemática, Sociales y Naturales adaptadas a cada grado, listas para imprimir.</p>
+      </div>
+      <a href="https://evalua-ia-f4hbxklhskqpmucmc3r39w.streamlit.app/" target="_blank" class="btn-demo">▶ Acceder a la Demo</a>
+    </div>
   </div>
 </section>
 
@@ -216,8 +226,31 @@ footer a{color:#a78bfa;text-decoration:none;}
     </div>
     <div class="modulos-grid">
       <div class="modulo-card"><div class="modulo-icon">📊</div><span class="modulo-tag tag-concejal">Concejales</span><div class="modulo-titulo">Tablero Territorial</div><div class="modulo-desc">Visualizá reclamos por barrio, categoría y estado. Gráficos interactivos y evolución temporal en tiempo real.</div></div>
-      <div class="modulo-card"><div class="modulo-icon">📝</div><span class="modulo-tag tag-concejal">Concejales</span><div class="modulo-titulo">Registro de Reclamos</div><div class="modulo-desc">Cargá demandas vecinales desde el celular. Se actualizan automáticamente en el tablero y la base de datos.</div></div>
+      <div class="modulo-card"><div class="modulo-icon">📝</div><span class="modulo-tag tag-concejal">Concejales</span><div class="modulo-titulo">Registro de Reclamos con Foto</div><div class="modulo-desc">Los vecinos envían foto y ubicación GPS desde el celular. Se actualizan automáticamente en el tablero.</div></div>
       <div class="modulo-card"><div class="modulo-icon">🤖</div><span class="modulo-tag tag-concejal">Concejales</span><div class="modulo-titulo">Redactor de Ordenanzas IA</div><div class="modulo-desc">Convertí reclamos en proyectos legislativos listos para presentar: ordenanzas, minutas y pedidos de informes.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SEGUROS -->
+<section id="seguros">
+  <div class="section-inner">
+    <div class="section-tag">🛡️ Para productores y agencias de seguros</div>
+    <h2 class="section-title">SiniestroIA — Gestión de Siniestros Inteligente</h2>
+    <p class="section-sub">Tus clientes denuncian su siniestro en 2 minutos desde el celular. Vos recibís todo al instante con foto, GPS y datos completos.</p>
+    <div class="demo-banner">
+      <div class="demo-banner-texto">
+        <h3>🛡️ SiniestroIA — Demo en vivo</h3>
+        <p>Probá el panel del productor con tablero de siniestros, estadísticas y detalle completo de cada caso.</p>
+      </div>
+      <a href="https://siniestro-ia-panel-eyyrsbpz8hrk22bcvwaa3t.streamlit.app/" target="_blank" class="btn-demo btn-demo-seguro">▶ Acceder a la Demo</a>
+    </div>
+    <div class="modulos-grid">
+      <div class="modulo-card"><div class="modulo-icon">📱</div><span class="modulo-tag tag-seguro">Seguros</span><div class="modulo-titulo">App de Denuncia para el Cliente</div><div class="modulo-desc">Sin instalar nada. El asegurado abre el link, saca fotos del daño y envía la denuncia con GPS en menos de 2 minutos.</div></div>
+      <div class="modulo-card"><div class="modulo-icon">📊</div><span class="modulo-tag tag-seguro">Seguros</span><div class="modulo-titulo">Panel del Productor</div><div class="modulo-desc">Tablero en tiempo real con todos los siniestros recibidos, fotos, ubicación GPS y estado de cada caso.</div></div>
+      <div class="modulo-card"><div class="modulo-icon">📈</div><span class="modulo-tag tag-seguro">Seguros</span><div class="modulo-titulo">Estadísticas y Reportes</div><div class="modulo-desc">Análisis de siniestros por tipo, evolución temporal y tasa de resolución. Exportación a Excel con un clic.</div></div>
     </div>
   </div>
 </section>
