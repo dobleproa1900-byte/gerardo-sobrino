@@ -1,155 +1,98 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gerardo Sobrino | Consultoría en IA y Automatización</title>
-  <!-- CDN de Tailwind CSS para aplicar los estilos -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Estilos de respaldo por si falla la CDN */
+    body { background-color: #020617; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; margin: 0; }
+    .card { background-color: #0f172a; border: 1px solid #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; }
+    .btn { display: inline-block; background-color: #2563eb; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 500; }
+    .btn:hover { background-color: #1d4ed8; }
+  </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
 
   <!-- NAVEGACIÓN -->
-  <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#" class="font-bold text-xl text-white tracking-wide">Gerardo Sobrino</a>
-      <nav class="flex gap-6 text-sm font-medium text-slate-300">
-        <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
-        <a href="#proyectos" class="hover:text-blue-400 transition-colors">Proyectos</a>
-        <a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+  <header class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span class="font-bold text-xl text-white">Gerardo Sobrino</span>
+      <nav class="flex gap-4 text-sm text-slate-300">
+        <a href="#inicio" class="hover:text-blue-400">Inicio</a>
+        <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
+        <a href="#contacto" class="hover:text-blue-400">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO / PRESENTACIÓN -->
-  <section id="inicio" class="py-20 text-center max-w-4xl mx-auto px-4">
-    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
-      Soluciones de Automatización e Inteligencia Artificial
+  <!-- HERO -->
+  <section id="inicio" class="py-16 text-center max-w-4xl mx-auto px-4">
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">
+      Soluciones de Automatización e IA
     </h1>
-    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-8">
-      Consultoría e integración de procesos inteligentes, análisis de datos y desarrollo de herramientas web a medida.
+    <p class="text-slate-400 text-lg mb-6">
+      Consultoría e integración de procesos inteligentes, análisis de datos y herramientas web a medida.
     </p>
-    <a href="#proyectos" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-      Ver proyectos destacados
-    </a>
+    <a href="#proyectos" class="btn">Ver proyectos destacados</a>
   </section>
 
-  <!-- SECCIÓN PORTFOLIO / PROYECTOS DESTACADOS -->
-  <section id="proyectos" class="py-16 bg-slate-900 text-slate-100 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Encabezado de la sección -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          Proyectos & Soluciones
-        </h2>
-        <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-          Desarrollos aplicados en automatización, análisis hídrico, inteligencia artificial y herramientas geoespaciales.
-        </p>
-      </div>
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-12 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white text-center mb-8">
+        Proyectos & Soluciones
+      </h2>
 
-      <!-- Grilla de Tarjetas -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- TARJETA 1: Simulador Hídrico PWA -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500 transition-all duration-300 flex flex-col justify-between shadow-lg">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-900/40 rounded-full border border-blue-700/50">
-                Simulación & PWA
-              </span>
-              <span class="text-xs text-slate-400">2026</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Simulador Hidrogeológico San Pedro</h3>
-            <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Tarjeta 1 -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Simulación & PWA</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-2">Simulador Hidrogeológico San Pedro</h3>
+            <p class="text-slate-300 text-sm mb-4">
               Aplicación web offline (PWA) para modelar la pluma de contaminación por lixiviados en el subsuelo pampeano y evaluar riesgos hídricos comunitarios.
             </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">Leaflet.js</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">JavaScript</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">PWA</span>
-            </div>
           </div>
-          <div class="px-6 pb-6 pt-0 flex gap-3">
-            <a href="https://dobleproa1900-byte.github.io/simulador-hidrico-sanpedro/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-lg transition-colors">
-              Ver Demo ↗
-            </a>
-            <a href="https://github.com/dobleproa1900-byte/simulador-hidrico-sanpedro" target="_blank" rel="noopener noreferrer" class="text-sm font-medium bg-slate-700 hover:bg-slate-600 text-slate-200 py-2 px-4 rounded-lg transition-colors">
-              Código
-            </a>
+          <div class="flex gap-2 mt-4">
+            <a href="https://dobleproa1900-byte.github.io/simulador-hidrico-sanpedro/" target="_blank" class="btn text-center flex-1">Ver Demo ↗</a>
+            <a href="https://github.com/dobleproa1900-byte/simulador-hidrico-sanpedro" target="_blank" class="bg-slate-800 text-slate-200 px-3 py-2 rounded-lg text-sm border border-slate-700 hover:bg-slate-700">Código</a>
           </div>
         </div>
 
-        <!-- TARJETA 2: Asistente IA para Gestión de Stock -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-emerald-500 transition-all duration-300 flex flex-col justify-between shadow-lg">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-900/40 rounded-full border border-emerald-700/50">
-                Automatización & IA
-              </span>
-              <span class="text-xs text-slate-400">2026</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Asistente Virtual & Control de Stock</h3>
-            <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+        <!-- Tarjeta 2 -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Automatización & IA</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-2">Asistente Virtual & Control de Stock</h3>
+            <p class="text-slate-300 text-sm mb-4">
               Sistema automatizado por WhatsApp y agentes de lenguaje para consultas de disponibilidad de medicamentos y alertas de stock crítico en comercios locales.
             </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">n8n / Python</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">Groq LLM</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">WhatsApp API</span>
-            </div>
           </div>
-          <div class="px-6 pb-6 pt-0">
-            <a href="#contacto" class="block text-center text-sm font-medium bg-slate-700 hover:bg-slate-600 text-slate-200 py-2 px-4 rounded-lg transition-colors">
-              Consultar caso de uso
-            </a>
-          </div>
+          <a href="#contacto" class="bg-slate-800 text-slate-200 text-center px-3 py-2 rounded-lg text-sm border border-slate-700 hover:bg-slate-700 mt-4">Consultar caso de uso</a>
         </div>
 
-        <!-- TARJETA 3: Auditoría & Modelado Hídrico WNTR -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-cyan-500 transition-all duration-300 flex flex-col justify-between shadow-lg">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-900/40 rounded-full border border-cyan-700/50">
-                Análisis de Datos
-              </span>
-              <span class="text-xs text-slate-400">2026</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Modelo de Resiliencia de Redes de Agua</h3>
-            <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+        <!-- Tarjeta 3 -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Análisis de Datos</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-2">Modelo de Resiliencia de Redes de Agua</h3>
+            <p class="text-slate-300 text-sm mb-4">
               Simulación hidráulica de la red de pozos urbanos con Python (WNTR) para diagnosticar déficits de suministro y simular escenarios de eficiencia operativa.
             </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">Python / WNTR</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">Pandas</span>
-              <span class="px-2 py-1 text-xs bg-slate-700 text-slate-300 rounded">Análisis Geoespacial</span>
-            </div>
           </div>
-          <div class="px-6 pb-6 pt-0">
-            <a href="https://github.com/dobleproa1900-byte" target="_blank" rel="noopener noreferrer" class="block text-center text-sm font-medium bg-slate-700 hover:bg-slate-600 text-slate-200 py-2 px-4 rounded-lg transition-colors">
-              Ver repositorios en GitHub ↗
-            </a>
-          </div>
+          <a href="https://github.com/dobleproa1900-byte" target="_blank" class="bg-slate-800 text-slate-200 text-center px-3 py-2 rounded-lg text-sm border border-slate-700 hover:bg-slate-700 mt-4">Ver repositorios en GitHub ↗</a>
         </div>
 
       </div>
-
-      <!-- Botón hacia GitHub -->
-      <div class="text-center mt-12">
-        <a href="https://github.com/dobleproa1900-byte" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-          <span>Explorar más proyectos en mi GitHub</span>
-          <span>→</span>
-        </a>
-      </div>
-
     </div>
   </section>
 
-  <!-- CONTACTO Y FOOTER -->
-  <footer id="contacto" class="py-12 bg-slate-950 text-center border-t border-slate-800">
-    <p class="text-slate-400 text-sm mb-4">¿Querés implementar una solución o automatización en tu proyecto?</p>
-    <a href="https://github.com/dobleproa1900-byte" target="_blank" class="text-blue-400 hover:underline font-medium">Contactar en GitHub</a>
-    <p class="text-xs text-slate-600 mt-8">© 2026 Gerardo Sobrino. Todos los derechos reservados.</p>
+  <!-- FOOTER -->
+  <footer id="contacto" class="py-8 text-center text-slate-500 text-sm">
+    <p>© 2026 Gerardo Sobrino. Todos los derechos reservados.</p>
   </footer>
 
 </body>
